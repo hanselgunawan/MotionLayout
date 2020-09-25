@@ -6,7 +6,7 @@
     <Transition
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
-        motion:duration="1000">
+        motion:duration="500">
        <KeyFrameSet>
        </KeyFrameSet>
         <OnClick motion:targetId="@+id/imageView" />
@@ -14,7 +14,15 @@
 
     <ConstraintSet android:id="@+id/start">
         <Constraint
-            motion:layout_constraintVertical_bias="0.499"
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.498"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/imageView3" />
+        <Constraint
             android:layout_height="wrap_content"
             motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toTopOf="parent"
@@ -26,5 +34,14 @@
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.618"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/imageView3" />
     </ConstraintSet>
 </MotionScene>
